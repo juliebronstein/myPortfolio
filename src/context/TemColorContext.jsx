@@ -3,15 +3,15 @@ import { createContext } from "react";
 
 
 export const colorTemContext=createContext({
-    backColor:"B",
+    backColor:"",
     setBackColor:()=>{},
-    primaryColor:"B",
+    primaryColor:'',
     setPrimaryColor:()=>{}
 })
 
 export const ColorTemContainer = ({children}) => {
-    const [backColor, setBackColor] = useState("B")
-    const [primaryColor, setPrimaryColor] = useState("B")
+    const [backColor, setBackColor] = useState('bg-1')
+    const [primaryColor, setPrimaryColor] = useState('color-1')
   return (
     <colorTemContext.Provider value={{
       backColor,
