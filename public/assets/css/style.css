@@ -1,0 +1,26 @@
+
+
+
+
+
+
+.App-logo {
+    width: 40vmin;
+    background-color: blue;
+  }
+  
+  .App-logo g{
+    fill: crimson;
+  }
+  
+  .App {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .color-box {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+  }
+  
