@@ -1,23 +1,24 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { createContext } from "react";
 
 
 export const colorTemContext=createContext({
-    backColor:"",
-    setBackColor:()=>{},
-    primaryColor:'',
-    setPrimaryColor:()=>{}
+    colors:"",
+        setColors:()=>{},
 })
 
 export const ColorTemContainer = ({children}) => {
-    const [backColor, setBackColor] = useState('bg-1')
-    const [primaryColor, setPrimaryColor] = useState('color-1')
+    const [colors, setColors] = useState({primaryColor:"color-1",backColor:"bg-1"})
+    useEffect(() => {
+      const colorSave = JSON.parse(localStorage.getItem('colors'));
+      if (colorSave) {
+        setColors(colorSave)
+      }
+    }, []);
   return (
     <colorTemContext.Provider value={{
-      backColor,
-      setBackColor,
-      primaryColor,
-      setPrimaryColor
+     colors,
+     setColors
     }}>
         {children}
     </colorTemContext.Provider>

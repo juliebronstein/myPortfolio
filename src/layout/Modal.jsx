@@ -4,32 +4,37 @@ import Modal from "react-bootstrap/Modal";
 import palette from "../svg/palette.svg";
 import { colorTemContext } from "../context/TemColorContext";
 function MyVerticallyCenteredModal(props) {
-  const { backColor, primaryColor, setPrimaryColor,setBackColor} = useContext(colorTemContext);
-  const [colors, setColors] = useState({});
+  // const { backColor, primaryColor, setPrimaryColor,setBackColor} = 
+  const {colors, setColors} = useContext(colorTemContext);
 
-  
-  const changeColor=(props,color)=>{
-  props.onHide()
-  setPrimaryColor(color)
-  setColors({   
-    backColor,
-    primaryColor})
+  const changeColor=(props,primaryColor)=>{
+    props.onHide()
+    const buf={primaryColor:primaryColor,backColor:colors.backColor}
+      setColors(()=>{return {...colors,primaryColor:primaryColor}})
+
+      
+    localStorage.setItem('colors', JSON.stringify(buf));
+    }
+
+  const changeBackColor=(props,backColor)=>{
+    props.onHide()
+    
+    setColors(()=>{return {...colors,backColor:backColor}})
+    const buf={primaryColor:colors.primaryColor,backColor:backColor}
+    localStorage.setItem('colors', JSON.stringify(buf));
   }
- localStorage.setItem('colors', JSON.stringify(colors));
+  
   return (
-    <div className="modal">
+    <div >
       <Modal
         {...props}
-        // size="lg or sm or xl"
+        dialogClassName="modal-90w public-profile-modal-class p-0"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        {/* <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-        Customize Your Theme
-        </Modal.Title>
-      </Modal.Header> */}
+  
         <Modal.Body>
+          <div className="m">
           <h3 className="justify-content-center">
             Customize Your Theme
             <p>Change the primary and background color to your preferences.</p>
@@ -44,10 +49,12 @@ function MyVerticallyCenteredModal(props) {
             <div  className="d-flex primary-color color-5" onClick={()=>{changeColor(props,'color-5')}}></div>
             <div  className="d-flex primary-color color-6" onClick={()=>{changeColor(props,'color-6')}}></div>
             </div>
+            <p>Background Color</p>
+            <div className="d-flex flex-row justify-content-center">
+            <div  className="d-flex primary-color bg-1" onClick={()=>{changeBackColor(props,'bg-1')}}></div>
+            <div  className="d-flex primary-color bg-2" onClick={()=>{changeBackColor(props,'bg-2')}}></div></div>
+            </div>
         </Modal.Body>
-        {/* <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer> */}
       </Modal>
     </div>
   );
