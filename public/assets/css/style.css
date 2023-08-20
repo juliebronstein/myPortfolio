@@ -10,6 +10,11 @@
 }
 .btn{
   border: none !important;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px !important;
+  align-items: baseline !important;
+  padding-top: 0.75rem !important;
 }
 
 .color-1{

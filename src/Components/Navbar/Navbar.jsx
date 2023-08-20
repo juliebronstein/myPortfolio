@@ -12,7 +12,7 @@ export const Navbar = () => {
       className={`${colors.primaryColor}  d-flex flex-row justify-content-around`}
     >
       <div className={`name`} >
-        Marya <span className={`${colors.primaryColor+"c"} `} >Chibour</span>
+        Marya <span className={`${colors.primaryColor+"c"}`} >Chibour</span>
       </div>
       <ul className="nav__menu d-none d-none d-lg-flex">
         {Ndata.map((item) => (

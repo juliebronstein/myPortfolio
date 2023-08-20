@@ -25,7 +25,7 @@ const Header = () => {
       <header id="header">
         <div className={`container header__container` }>
           <div className="header__profile" data-aos="fade-in">
-            <img className="profile-img col-11" src={pic} alt="connection id poor" />
+            <img className="profile-img col-12" src={pic} alt="connection id poor" />
             <div className="verified">
               <img className="verified-img" src={verify} alt="connection id poor" />
             </div>
