@@ -4,8 +4,8 @@ import {colorTemContext} from '../context/TemColorContext'
  const About = () => {
 
   return (
-    <div>
-A
+    <div className='about'>
+dfdfdf
     </div>
   )
 }

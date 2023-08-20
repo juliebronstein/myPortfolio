@@ -1,10 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import palette from "../svg/palette.svg";
 import { colorTemContext } from "../context/TemColorContext";
+import { IoIosColorPalette } from "react-icons/io";
 function MyVerticallyCenteredModal(props) {
-  // const { backColor, primaryColor, setPrimaryColor,setBackColor} = 
   const {colors, setColors} = useContext(colorTemContext);
 
   const changeColor=(props,primaryColor)=>{
@@ -24,17 +22,18 @@ function MyVerticallyCenteredModal(props) {
     localStorage.setItem('colors', JSON.stringify(buf));
   }
   
+
   return (
     <div >
       <Modal
         {...props}
-        dialogClassName="modal-90w public-profile-modal-class p-0"
+        className="my-modal m"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
   
         <Modal.Body>
-          <div className="m">
+          <div className="">
           <h3 className="justify-content-center">
             Customize Your Theme
             <p>Change the primary and background color to your preferences.</p>
@@ -51,8 +50,8 @@ function MyVerticallyCenteredModal(props) {
             </div>
             <p>Background Color</p>
             <div className="d-flex flex-row justify-content-center">
-            <div  className="d-flex primary-color bg-1" onClick={()=>{changeBackColor(props,'bg-1')}}></div>
-            <div  className="d-flex primary-color bg-2" onClick={()=>{changeBackColor(props,'bg-2')}}></div></div>
+            <div  className="d-flex primary-color bg-1a" onClick={()=>{changeBackColor(props,'bg-1')}}></div>
+            <div  className="d-flex primary-color bg-2a" onClick={()=>{changeBackColor(props,'bg-2')}}></div></div>
             </div>
         </Modal.Body>
       </Modal>
@@ -62,21 +61,17 @@ function MyVerticallyCenteredModal(props) {
 
 function ColorModal() {
   const [modalShow, setModalShow] = useState(false);
-
+  const {colors} = useContext(colorTemContext);
   return (
-    <>
-      <img
-        src={palette}
-        className="App-logo "
-        alt="palette"
-        onClick={() => setModalShow(true)}
-      />
+    <span >
+   
 
-      <MyVerticallyCenteredModal
+  <IoIosColorPalette className={`fs-2`}  onClick={() => setModalShow(true)}/>
+       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
-    </>
+    </span>
   );
 }
 

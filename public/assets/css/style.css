@@ -8,6 +8,111 @@
   font-weight: normal;
   font-style: normal;
 }
+.btn{
+  border: none !important;
+}
+
+.color-1{
+  color: whitesmoke;
+  background-color: rgb(103, 58, 183) !important;
+  box-shadow: 0px 5px 50px rgb(103, 58, 183,0.3);
+}
+.color-2{
+  color: whitesmoke;
+  background-color: rgb(0, 73, 16)  !important;
+  box-shadow: 0px 5px 50px rgb(0, 73, 16,0.3);
+}
+.color-3{
+  color: whitesmoke;
+  background-color: rgb(16, 0, 245) !important;
+  box-shadow: 0px 5px 50px rgb(16, 0, 245,0.3);
+}
+.color-4{
+  color: whitesmoke;
+  background-color: rgb(233, 30, 99) !important;
+  box-shadow: 0px 5px 50px rgb(233, 30, 99,0.3);
+}
+.color-5{
+  color: whitesmoke;
+  background-color: rgb(202, 4, 4) !important;
+  box-shadow: 0px 5px 50px rgb(202, 4, 4,0.3);
+}
+.color-6{
+  color: whitesmoke;
+  background-color: rgb(175, 165, 73) !important;
+  box-shadow: 0px 5px 50px rgb(175, 165, 73,0.3);
+}
+.color-1c{
+color: rgb(103, 58, 183) !important;
+}
+.color-2c{
+color: rgb(0, 73, 16) !important;
+} 
+.color-3c{
+color: rgb(16, 0, 245) !important;
+ }
+.color-4c{
+color: rgb(233, 30, 99) !important; 
+}
+.color-5c{
+color: rgb(202, 4, 4) !important;
+ }
+.color-6c{
+color: rgb(175, 165, 73)  !important;
+}
+
+.bg-1a{
+  background-color:  rgb(255, 255, 255) !important;
+}
+.bg-1b{
+  background-color:  whitesmoke !important;
+}
+.bg-2a{
+  color: whitesmoke;
+  background-color: rgb(70, 68, 68) !important;
+}
+.bg-2b{
+  color: whitesmoke;
+  background-color: black !important;
+}
+
+*{
+  font-family: "wolf";
+}
+
+/* ------------------------------nanbar section */
+nav{
+  color: whitesmoke;;
+padding-top: 25px;
+padding-bottom: 10px;
+  }
+.nav__menu li a{
+  text-decoration: none;
+  color: whitesmoke;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.nav__menu li{
+  text-decoration: none;
+}
+.nav__menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;  
+}
+.name{
+  font-weight: 700;
+}
+.name span{
+  background-color: whitesmoke;
+  border-radius: 0.3rem;
+  padding: 0rem 0.4rem;
+  color: var(--color-primary);
+  margin-left: 0.2rem;
+  font-weight: 600;
+}
+/*------------------------------- madal  */
 h3{
   font-size: 1.6rem;
   text-align: center !important;
@@ -23,46 +128,12 @@ h3 p{
 width: 30px;
 height: 30px;
 border-radius: 50%;
-background-color: aqua;
 margin-left: 10px;
 }
-.color-1{
-  background-color: #673AB7
-}
-.color-2{
-  background-color: rgb(0, 73, 16);
-}
-.color-3{
-  background-color: rgb(16, 0, 245);
-}
-.color-4{
-  background-color: #E91E63
-}
-.color-5{
-  background-color: rgb(202, 4, 4);
-}
-.color-6{
-  background-color: rgb(226, 206, 29);
-}
-.bg-1{
-  background-color: rgb(253, 253, 253);
-}
-.bg-2{
-  background-color: black;
-}
-.p
-*{
-  font-family: "wolf";
-}
-
-.App-logo {
-    width: 5vmin;
+  .m{
+    /* background-color: rgb(212, 212, 212,0.01); */
+    backdrop-filter: blur(4px) 
   }
-  
-  /* .App-logo g{
-    fill: crimson;
-  } */
-  
   .App {
     text-align: center;
     margin-top: 50px;
@@ -73,8 +144,12 @@ margin-left: 10px;
     height: 200px;
     margin: 20px auto;
   }
-  .m {
-    background-color: rgb(218, 218, 218);
+  .my-modal .modal-content {
+    background-color: rgb(212, 212, 212);
+    border-radius: 20px;
+    width: 80%;
+  }
 
-    /* height: fit-content; */
+  .about{
+    height: 100vh;
   }

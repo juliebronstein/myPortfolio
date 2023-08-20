@@ -1,25 +1,20 @@
 import React from "react";
-// import { colorTemContext } from "./context/TemColorContext";
 import { ColorTemContainer } from "./context/TemColorContext";
 
-import { Header } from "./Components/Header";
+import { Home } from "./Home";
+
+
+
 
 function App() {
-  
-  return (
-    <div>
-      <ColorTemContainer>
-      
-<Header/>
 
-      </ColorTemContainer>
-
-
-
-
+  return (  
+  <ColorTemContainer>
+    
+<Home/>
+     
    
-    </div>
-
+ </ColorTemContainer>
   );
 }
 
