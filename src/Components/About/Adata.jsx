@@ -12,7 +12,7 @@ const Adata = [
     id: 2,
     icon: <TbBooks />,
     title: "Projects",
-    desc: "100+ Completed",
+    desc: "10+ Completed",
   },
 ];
 

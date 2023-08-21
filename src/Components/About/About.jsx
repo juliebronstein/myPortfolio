@@ -23,7 +23,7 @@ const About = () => {
             <div className="about__cards">
               {Adata.map((item) => (
                 <Card key={item.id} className={`${colors.backColor+"b"}  about__card`}>
-                  <span className="about__card-icon">{item.icon}</span>
+                  <span className={`${colors.primaryColor + "c"} about__card-icon`}>{item.icon}</span>
                   <h5>{item.title}</h5>
                   <small>{item.desc}</small>
                 </Card>
