@@ -1,6 +1,6 @@
 
 
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 @font-face{
   font-family: "wolf";
@@ -8,6 +8,21 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face{
+  font-family: "wolf-bold";
+  src: url("../font/Montserrat-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.f-h-b{
+  font-family: "wolf-bold" !important;
+  font-size: 30px ;
+}
+.f-s-b{
+  font-family: "wolf-bold";
+  font-size: 15px;
+}
+
 .btn{
   border: none !important;
   width: 10rem;
@@ -18,32 +33,32 @@
 }
 
 .color-1{
-  color: whitesmoke;
+  color: whitesmoke !important;
   background-color: rgb(103, 58, 183) !important;
   box-shadow: 0px 5px 50px rgb(103, 58, 183,0.3);
 }
 .color-2{
-  color: whitesmoke;
+  color: whitesmoke !important;
   background-color: rgb(0, 73, 16)  !important;
   box-shadow: 0px 5px 50px rgb(0, 73, 16,0.3);
 }
 .color-3{
-  color: whitesmoke;
+  color: whitesmoke !important;
   background-color: rgb(16, 0, 245) !important;
   box-shadow: 0px 5px 50px rgb(16, 0, 245,0.3);
 }
 .color-4{
-  color: whitesmoke;
+  color: whitesmoke !important;
   background-color: rgb(233, 30, 99) !important;
   box-shadow: 0px 5px 50px rgb(233, 30, 99,0.3);
 }
 .color-5{
-  color: whitesmoke;
+  color: whitesmoke !important;
   background-color: rgb(202, 4, 4) !important;
   box-shadow: 0px 5px 50px rgb(202, 4, 4,0.3);
 }
 .color-6{
-  color: whitesmoke;
+  color: whitesmoke !important;
   background-color: rgb(175, 165, 73) !important;
   box-shadow: 0px 5px 50px rgb(175, 165, 73,0.3);
 }

@@ -38,7 +38,7 @@ const Header = () => {
             <SiReact />
             {/* <TbBrandNextjs /> */}
           </div>
-          <h3 data-aos="fade-up">Marya Chibour</h3>
+          <h2 data-aos="fade-up f-h-b">Marya Chibour</h2>
           <p data-aos="fade-up">
             A highly skilled Frontend Developer based in Georgia{" "}
             <span className="georgia"><img className="col-1" src={georgia} alt="connection is poor" /></span> with a strong

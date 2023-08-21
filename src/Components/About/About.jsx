@@ -18,8 +18,8 @@ const About = () => {
               <img className="col-11 d-flex" src={pic} alt="" />
             </div>
           </div>
-          <div className="about__right">
-            <h2>About me</h2>
+          <div className="about__right ">
+            <h2 className="f-h-b">About me</h2>
             <div className="about__cards">
               {Adata.map((item) => (
                 <Card key={item.id} className={`${colors.backColor+"b"}  about__card`}>

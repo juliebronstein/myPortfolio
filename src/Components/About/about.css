@@ -61,7 +61,9 @@ transform: scale(1.1)
     align-items: center;
     transition: var(--transition);
   }
-  
+  .service__details{
+    margin-top: 5%;
+  }
   .card.about__card:hover .about__card-icon {
     background: var(--color-primary);
     color: var(--color-white);
@@ -94,6 +96,9 @@ transform: scale(1.1)
   
   /* Media Query (Phone)  */
   @media screen and (max-width: 600px) {
+    .about__container{
+      padding: 15px;
+    }
     .about__cards {
       grid-template-columns: repeat(2, 1fr);
     }
