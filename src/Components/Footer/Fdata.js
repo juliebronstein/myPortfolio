@@ -43,7 +43,7 @@ export const socials = [
   },
   {
     id: 3,
-    link: "mailto:geekyprashant840@gmail.com",
+    link:"mailto:marya.chibour@gmail.com",
     icon: <SiGmail />,
   },
 ];

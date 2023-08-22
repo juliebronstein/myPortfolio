@@ -10,33 +10,34 @@ const Contact = () => {
       <section id="contact">
         <div className="contact-inner container">
           <div className="contact-left">
-            <h2>Let's get in touch</h2>
+            <h2 className="text-left">Let's get in touch</h2>
             <p>
             I am excited to connect and explore potential collaborations. As an avid React developer, I'm very excited about the possibilities ahead. Whether you have a project in mind, need help with your development needs, or just want to discuss ideas, I'm here and ready to dive in.
 Get in touch with me through the contact information provided. Let's start a journey of innovation and creativity together. I can't wait to share my skills and expertise to bring your projects to life. We look forward to starting this exciting collaboration!
             </p>
             <div className="contact__container">
               {Cdata.map((contact) => (
-                <a key={contact.id} href={contact.link} target="_blank">
+                <a className={`${ colors.backColor+"b"} ${colors.primaryColor+"c"} `} key={contact.id} href={contact.link} >
                   {contact.icon}
                 </a>
               ))}
             </div>
           </div>
           <div className="contact-right">
-            <h2>Feel Free to fill the form</h2>
+            <h2 className="text-left" >Feel Free to fill the form</h2>
             <div className="contact-form">
               <form
-                action="https://formspree.io/f/mgebnblj"
-                method="POST"
+                  action="https://formspree.io/f/xpzgdrwo"
+                  method="POST"
                 className="contact-inputs"
               >
-                <label for="name">What is your beautiful name</label>
-                <input className={`${colors.backColor+"a"} `} type="text" name="name" autoComplete="off" required />
-                <label for="email">Your favorite email address</label>
-                <input type="email" name="email" autoComplete="off" required />
-                <label for="message">How can I help you?</label>
+                <label htmlFor="name">What is your beautiful name</label>
+                <input className={`${colors.backColor+"b"}`} type="text" name="name" autoComplete="off" required />
+                <label htmlFor="email">Your favorite email address</label>
+                <input className={`${colors.backColor+"b"}`}  type="email" name="email" autoComplete="off" required />
+                <label htmlFor="message">How can I help you?</label>
                 <textarea
+                className={`${colors.backColor+"b"}`} 
                   name="message"
                   cols="20"
                   rows="4"
@@ -44,7 +45,7 @@ Get in touch with me through the contact information provided. Let's start a jou
                   required
                 ></textarea>
 
-                <input type="submit" value="Send" className="btn primary" />
+                <input  type="submit" value="Send" className={`btn primary ${colors.primaryColor}`} />
               </form>
             </div>
           </div>

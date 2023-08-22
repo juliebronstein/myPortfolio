@@ -12,10 +12,10 @@ const Services = () => {
       <section id="skills">
         <h2 className="text-center pt-5 mt-5" >Skills & Proficiencies</h2>
         <p className="text-center">Highlighting my abilities and expertise</p>
-        <div className="container services__container col-12 col-md-8" data-aos="fade-up">
+        <div className="container services__container col-12 col-md-9" data-aos="fade-up">
           {Sdata.map((item) => (
             <Card key={item.id} className={`${colors.backColor+"a"} d-lg-flex flex-lg-row `} >
-              <div className={`${colors.primaryColor+"c"} service__icon`}>{item.icon}</div>
+              <div className={`${colors.primaryColor}  service__icon`}>{item.icon}</div>
               <div className="service__details">
                 <h4 className=" f-s-b">{item.title}</h4>
               </div>

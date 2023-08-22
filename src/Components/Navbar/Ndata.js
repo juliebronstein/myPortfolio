@@ -20,6 +20,11 @@ const Ndata = [
       title: "Portfolio",
     },
     {
+      id: 6,
+      link: "#testimonials",
+      title: "Testimonials",
+    },
+    {
       id: 5,
       link: "#contact",
       title: "Contact",

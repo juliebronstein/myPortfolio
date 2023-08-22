@@ -39,14 +39,16 @@
     place-items: center;
     font-size: 1.6rem;
     border: 2px solid transparent;
-    border-radius: var(--border-radius-2);
+    border-radius: 20px;
   }
   
   .contact__container a:hover {
     background: transparent;
     border-color: var(--color-primary);
     color: var(--color-primary);
+    border-radius: 20px;
     transform: translateY(-0.5rem);
+    transition: transform 1s
   }
   
   .contact-form {
@@ -76,14 +78,16 @@
     border: 1px solid blue;
     color: blue;
   }
-  
+  .text-left{
+text-align: left;
+  }
   input,
   textarea {
     max-width: 50rem;
     color: #1c1c1c;
     font-size: 1rem;
     padding: 0.6rem;
-    border-radius: var(--border-radius-3);
+    border-radius: 10px;
     border: 1px solid transparent;
     margin-bottom: 1rem;
   }

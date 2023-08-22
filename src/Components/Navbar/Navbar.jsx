@@ -11,9 +11,11 @@ export const Navbar = () => {
     <nav
       className={`${colors.primaryColor} col-12 d-flex flex-row justify-content-around`}
     >
-      <div className={`name`} >
+      <a className="text-decoration-none" href="/#">
+      <div className={` name`} >
         Marya <span className={`${colors.primaryColor+"c"}`} >Chibour</span>
       </div>
+      </a>
       <ul className="nav__menu d-none d-none d-lg-flex">
         {Ndata.map((item) => (
           <li key={item.id}>

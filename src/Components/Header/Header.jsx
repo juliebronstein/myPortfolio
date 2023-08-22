@@ -56,7 +56,7 @@ const Header = () => {
             {Sdata.map((item) => (
               
               <a className={`  ${colors.primaryColor+"c"}
-               ${ colors.backColor==="bg-1"?"bg-1a":"bg-1b"}`} key={item.id} href={item.link} rel="noreferer">
+               ${ colors.backColor+"a"}`} key={item.id} href={item.link} rel="noreferer">
                 {item.icon}
               </a>
             ))}

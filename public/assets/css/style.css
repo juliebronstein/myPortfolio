@@ -133,6 +133,7 @@ z-index: 100;
 }
 .name{
   font-weight: 700;
+  color: white !important;
 }
 .name span{
   background-color: whitesmoke;
