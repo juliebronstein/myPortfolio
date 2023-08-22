@@ -19,7 +19,7 @@ const About = () => {
             </div>
           </div>
           <div className="about__right ">
-            <h2 className="f-h-b">About me</h2>
+            <h2 >About me</h2>
             <div className="about__cards">
               {Adata.map((item) => (
                 <Card key={item.id} className={`${colors.backColor+"b"}  about__card`}>
@@ -29,7 +29,7 @@ const About = () => {
                 </Card>
               ))}
             </div>
-            <p>
+            <p >
               Over my 2+ years in the web development industry, I have
               undertaken a diverse range of projects, spanning from small,
               simple websites to large, complex ones. I have consistently
@@ -37,7 +37,7 @@ const About = () => {
               has fueled my motivation to take on even more challenging
               assignments.
             </p>
-            <p>
+            <p >
             I am very punctual in project delivery and hyper-responsive. 
             I'm a skilled React and TypeScript developer with 2+ years of experience
             in building responsive, user-friendly web applications. I specialize in 

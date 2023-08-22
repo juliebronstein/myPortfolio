@@ -14,13 +14,20 @@
   font-weight: normal;
   font-style: normal;
 }
-.f-h-b{
+h2{
   font-family: "wolf-bold" !important;
-  font-size: 30px ;
+  font-size: 30px !important ;
+  text-align: center;
 }
 .f-s-b{
   font-family: "wolf-bold";
-  font-size: 15px;
+  font-size: 15px !important;
+}
+.f-s-1{
+  font-size: 12px !important;
+}
+.text_align_center{
+  text-align: center;
 }
 
 .btn{
@@ -98,13 +105,16 @@ color: rgb(175, 165, 73)  !important;
 
 *{
   font-family: "wolf";
-}
 
+}
+p{  font-size: 14px;}
 /* ------------------------------nanbar section */
 nav{
+  position: fixed;
   color: whitesmoke;;
 padding-top: 25px;
 padding-bottom: 10px;
+z-index: 100;
   }
 .nav__menu li a{
   text-decoration: none;

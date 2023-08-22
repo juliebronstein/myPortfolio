@@ -1,11 +1,12 @@
 header {
 
-    height: calc(100vh - 5rem);
+    height: calc(100vh + 8rem);
     display: grid;
     place-items: center;
     background: var(--color-white);
     transition: var(--transition);
     margin-bottom: 3rem;
+   
   }
   
   .georgia {
@@ -37,10 +38,14 @@ header {
     width: 2.2rem;
   }
   
+  .header__container {
+    margin-top: 8rem;
+  }
   .header__container p {
     width: 30rem;
     text-align: center;
     margin: 0.6rem 0.2rem 1.8rem;
+    
   }
   
   .header__cta {

@@ -2,58 +2,42 @@ const Tdata = [
     {
       id: 1,
       avatar: "/images/avatar1.jpg",
-      quote:
-        "I am pleased to recommend Prashant for his exceptional skills as a front-end developer, particularly with React. Prashant consistently demonstrated his ability to create visually stunning, highly-functional user interfaces that delighted users. He has a keen eye for design and a deep understanding of React, which allows him to implement complex features with ease. Overall, I highly recommend Prashant as a front-end developer, and I am confident that he would be an excellent addition to any team. His exceptional skills and commitment to excellence would be valuable assets to any organization.",
-      name: "Virag Kormoczy",
-      profession: "MERN Stack Developer",
+      quote:"I ordered a barcode scanner app from Maria. He was able to understand our company's needs well and deliver us a program with a beautiful user interface. Her most important feature is her timely delivery and availability.",
+      name: "Hassin Safarchi",
+      profession: "Mechanical Engineer",
     },
     {
       id: 2,
       avatar: "/images/avatar2.jpg",
       quote:
-        "Prashant's knowledge of React is extensive, and he has a keen eye for design and user experience. Prashant is also an excellent communicator. In addition to his technical skills, Prashant is a pleasure to work with. He is a team player who is always willing to lend a hand and share his expertise. I would highly recommend Prashant for any frontend development role, and I am confident that he would make a valuable addition to any team.",
-      name: "Alzubair Alqaraghuli",
-      profession: "Coding Instructor",
+        "Marya Chibour of React is extensive, and he has a keen eye for design and user experience. Marya is also an excellent communicator. In addition to her technical skills, Marya is a pleasure to work with. He is a team player who is always willing to lend a hand and share her expertise. I would highly recommend Chibour for any frontend development role, and I am confident that he would make a valuable addition to any team.",
+      name: "Noura",
+      profession: "FullStack Developer",
     },
     {
       id: 3,
       avatar: "/images/avatar3.jpg",
       quote:
-        "Prashant is smart, collaborative fast engineer. He is ideal for small, early stage companies since he works hard and produces solid product quickly. He will adapt his work ethic smoothly to nearly any sensible process. I would recommend and vouch him to any Organization as he is definitely an assets to any Org.",
-      name: "Rakesh Mishra",
-      profession: "Recruitment Leader at Amelia",
+        "For almost one years, I worked with Marya in the same team. She was a professional React developer with an excellent manner and brilliant behavior. She was committed to work and a person who finished every task to the proper results. It was my pleasure to work with her. I really recommend working with her.",
+      name: "Fatim",
+      profession: "Front Developer",
     },
+
     {
       id: 4,
       avatar: "/images/avatar4.jpg",
       quote:
-        "Strongly recommended Prashant Bhardwaj for his powerfull skills : his coding was excellent and his designs were unique and innovative,He was always thoughtful and considerate, an excellent team player who can also work independently and do a fantastic job. Prashant can seemingly do anything, so he’s very highly recommended.",
-      name: "Ben ali issam Eddine",
+        "I highly recommend Maria for her strong coding skills as well as her creative thinking and innovative designs, as well as her independence in how she applies elements to projects. Also, he has great perseverance in learning.",
+      name: "Jordi",
       profession: "Mechatronic Engineer",
     },
     {
       id: 5,
       avatar: "/images/avatar5.jpg",
       quote:
-        "I had the pleasure of working with Prashant on a frontend development project, and I can confidently say that he is an exceptional developer. Prashant consistently delivered high-quality work on time and was always willing to go above and beyond to ensure that our project was a success.",
-      name: "Rory Bernier",
-      profession: "Director of BD at FourBends",
-    },
-    {
-      id: 6,
-      avatar: "/images/avatar6.jpg",
-      quote:
-        "Prashant is a great developer. I have followed him closely here on LinkedIn and I have seen how passionate he is towards improving his skills as a developer. Prashant is an amazing technical writer also and fine problem solver. If you are looking for someone who is passionate and dedicated to delivering world class web application then you can try Prashant and I can assure you that he's going to deliver.",
-      name: "Engr Promise Uka",
-      profession: "Full Stack Developer",
-    },
-    {
-      id: 7,
-      avatar: "/images/avatar7.jpg",
-      quote:
-        "I would highly recommend Prashant to anyone looking for a talented Frontend Developer who is passionate about his work and committed to delivering outstanding results. His expertise in React.js and Next.js is truly impressive, and he consistently delivers high-quality work on time.",
-      name: "Dilumanji Seneviratne",
-      profession: "Coding Analyst at Invoisync",
+        "We worked together for about a year straight. Maria's ability to understand and analyze and very high precision in execution had a great impact on the process of completing projects. I would definitely recommend working with Maria.",
+      name: "Arthur",
+      profession: "DB Administrator",
     },
   ];
   

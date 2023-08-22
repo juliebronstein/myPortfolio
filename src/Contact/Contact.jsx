@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import Cdata from "./Cdata";
 import "./Contact.css";
+import { colorTemContext } from "../context/TemColorContext";
 
 const Contact = () => {
+  const {colors} = useContext(colorTemContext);
   return (
     <>
       <section id="contact">
@@ -9,10 +12,8 @@ const Contact = () => {
           <div className="contact-left">
             <h2>Let's get in touch</h2>
             <p>
-              I enjoy exploring fresh design challenges and discussing new
-              projects. To make the most out of our initial meeting, please feel
-              free to share as much information as possible regarding your
-              project, enabling us to have a comprehensive discussion.
+            I am excited to connect and explore potential collaborations. As an avid React developer, I'm very excited about the possibilities ahead. Whether you have a project in mind, need help with your development needs, or just want to discuss ideas, I'm here and ready to dive in.
+Get in touch with me through the contact information provided. Let's start a journey of innovation and creativity together. I can't wait to share my skills and expertise to bring your projects to life. We look forward to starting this exciting collaboration!
             </p>
             <div className="contact__container">
               {Cdata.map((contact) => (
@@ -31,7 +32,7 @@ const Contact = () => {
                 className="contact-inputs"
               >
                 <label for="name">What is your beautiful name</label>
-                <input type="text" name="name" autoComplete="off" required />
+                <input className={`${colors.backColor+"a"} `} type="text" name="name" autoComplete="off" required />
                 <label for="email">Your favorite email address</label>
                 <input type="email" name="email" autoComplete="off" required />
                 <label for="message">How can I help you?</label>

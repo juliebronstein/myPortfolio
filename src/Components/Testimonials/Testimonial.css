@@ -12,10 +12,10 @@
     cursor: grab;
   }
   
-  .read-btn {
-    color: var(--color-primary);
+  .read_btn {
     padding: 0.5rem 0;
-    font-weight: 500;
+    border: none;
+    font-size: 13px;
     background: transparent;
   }
   

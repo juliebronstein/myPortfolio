@@ -6,8 +6,9 @@ import { useState } from "react";
 
 const Portfolio = () => {
   const [projects, setProjects] = useState(Pdata);
-  const categories = Pdata.map((item) => item.category);
-  const uniqueCategories = ["All", ...new Set(categories)];
+  // const categories = Pdata.map((item) => item.category);
+  // const uniqueCategories = ["All", ...new Set(categories)];
+  const uniqueCategories = ["ReactJS"];
 
   const filterProjectsHandler = (category) => {
     if (category === "All") {
@@ -22,11 +23,11 @@ const Portfolio = () => {
 
   return (
     <>
+
       <section id="portfolio">
-        <h2>Recent Projects</h2>
-        <p>
-          Check out some of the projects I recently worked on. Use the buttons
-          to toggle the different categories
+        <h2 className="pt-5 mt-5">Recent Projects</h2>
+        <p className="text-center">
+          Check out some of the projects I recently worked on.
         </p>
         <div className="container portfolio__container">
           <ProjectsCategories

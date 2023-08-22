@@ -41,10 +41,11 @@
     height: fit-content;
     min-height: 7rem;
     max-height: 15rem;
-    background: var(--color-light);
-    border-radius: var(--border-radius-2);
+    /* background: var(--color-light);
+    border-radius: var(--border-radius-2); */
     margin-bottom: 1.5rem;
     overflow: hidden;
+    border-radius: 10px;
   }
   
   .portfolio__project h4 {

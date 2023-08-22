@@ -9,7 +9,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`${colors.primaryColor}  d-flex flex-row justify-content-around`}
+      className={`${colors.primaryColor} col-12 d-flex flex-row justify-content-around`}
     >
       <div className={`name`} >
         Marya <span className={`${colors.primaryColor+"c"}`} >Chibour</span>

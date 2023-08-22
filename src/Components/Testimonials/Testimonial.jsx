@@ -1,14 +1,17 @@
-import React, { useState } from "react";
-import Card from "../../components/Card";
+import React, { useContext, useState } from "react";
+import Card from "../../layout/Card";
+import './Testimonial.css'
+import { colorTemContext } from "../../context/TemColorContext";
 
 const Testimonial = ({ avatar, quote, name, profession }) => {
+  const { colors} = useContext(colorTemContext);
   const [readMore, setReadMore] = useState(false);
   return (
-    <Card className="light">
+    <Card className={`light ${colors.backColor+"a"} m-3`}>
       <p className="testimonial__quote">
         {readMore ? quote : `${quote.substring(0, 100)}...`}
         <br />
-        <button className="read-btn" onClick={() => setReadMore(!readMore)}>
+        <button className={`read_btn ${colors.primaryColor+"c"}`} onClick={() => setReadMore(!readMore)}>
           {readMore ? "show more" : "show less"}
         </button>
       </p>
@@ -17,8 +20,8 @@ const Testimonial = ({ avatar, quote, name, profession }) => {
           <img src={avatar} alt="" />
         </div>
         <div className="testimonial__client-details">
-          <h6>{name}</h6>
-          <small>{profession}</small>
+          <h6 className="f-s-b ">{name}</h6>
+          <small className="f-s-1" >{profession}</small>
         </div>
       </div>
     </Card>
