@@ -7,7 +7,7 @@ const Contact = () => {
   const {colors} = useContext(colorTemContext);
   return (
     <>
-      <section className={`${colors.backColor + "a"} pt-5 mt-5 pb-5`} id="contact">
+      <section className={`${colors.backColor + "a"} pt-5 pb-5`} id="contact">
         <div className="contact-inner container">
           <div className="contact-left">
             <h2 className="text-left">Let's get in touch</h2>

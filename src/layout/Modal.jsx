@@ -27,14 +27,14 @@ function MyVerticallyCenteredModal(props) {
     <div >
       <Modal
         {...props}
-        className="my-modal m"
+        className="my-modal m justify-content-center ps-5"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
   
         <Modal.Body>
-          <div className="">
-          <h3 className="justify-content-center">
+          <div className="align-content-center">
+          <h3 className="justify-content-center f-s-b fs-3">
             Customize Your Theme
             <p>Change the primary and background color to your preferences.</p>
           
@@ -50,8 +50,8 @@ function MyVerticallyCenteredModal(props) {
             </div>
             <p>Background Color</p>
             <div className="d-flex flex-row justify-content-center">
-            <div  className="d-flex primary-color bg-1a" onClick={()=>{changeBackColor(props,'bg-1')}}></div>
-            <div  className="d-flex primary-color bg-2a" onClick={()=>{changeBackColor(props,'bg-2')}}></div></div>
+            <div  className="d-flex back-color bg-1a" onClick={()=>{changeBackColor(props,'bg-1')}}></div>
+            <div  className="d-flex back-color bg-2a" onClick={()=>{changeBackColor(props,'bg-2')}}></div></div>
             </div>
         </Modal.Body>
       </Modal>

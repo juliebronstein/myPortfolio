@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
   
   .contact__container a {

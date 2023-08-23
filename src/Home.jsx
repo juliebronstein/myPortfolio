@@ -16,6 +16,7 @@ import { BsPersonFill } from "react-icons/bs";
 import { AiFillAppstore } from "react-icons/ai";
 import { AiFillMessage } from "react-icons/ai";
 import { SiReact } from "react-icons/si";
+import classNames from 'classnames';
 
 const scrollTargetIds = ["home", "about", "skills", "portfolio", "contact"];
 // const scrollTargetIds = [ "about", "contact"];
@@ -40,6 +41,7 @@ const ScrollTargetComponent = ({ colors }) => {
 
 export const Home = () => {
   const { colors } = useContext(colorTemContext);
+  const activeNavClass = classNames('is-active', `${colors.primaryColor}c`);
 
   return (
     <>
@@ -53,8 +55,8 @@ export const Home = () => {
       >
         {/* Navigation links */}
       
-      <span className="back-nav">
-      <ul className={`${colors.backColor+"bf"} col-12 d-flex flex-row justify-content-center floating__nav`}>
+
+      <ul className={`${colors.backColor+"bf"} col-12  d-flex flex-row justify-content-center floating__nav d-lg-none `}>
           <li>
             <a href="#home">
               <AiFillHome />
@@ -81,7 +83,7 @@ export const Home = () => {
             </a>
           </li>
         </ul>
-      </span>
+
       </ScrollspyNav>
 
       <ScrollTargetComponent colors={colors} />

@@ -58,7 +58,7 @@ const Testimonials = () => {
     <>
       <section className={`${colors.backColor + "b"}`} id="testimonials">
 
- <div className="pb-5 mb-5">
+ <div className="pb-5">
  <h2 className="pt-5">What Other's Say</h2>
         <p className="text_align_center">
           These are unbiased testimonials from some of the people with whom I
