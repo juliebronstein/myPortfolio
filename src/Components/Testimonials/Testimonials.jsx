@@ -15,7 +15,10 @@ import './Testimonial.css'
 import Testimonial from "./Testimonial";
 import Slider from "react-slick";
 import 'react-slick/dist/react-slick.min';
+import { colorTemContext } from "../../context/TemColorContext";
+import { useContext } from "react";
 const Testimonials = () => {
+  const {colors} = useContext(colorTemContext);
   const settings = {
     dots: true,
     infinite: false,
@@ -53,7 +56,7 @@ const Testimonials = () => {
   };
   return (
     <>
-      <section id="testimonials">
+      <section className={`${colors.backColor + "b"}`} id="testimonials">
 
  <div className="pb-5 mb-5">
  <h2 className="pt-5">What Other's Say</h2>

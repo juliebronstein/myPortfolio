@@ -3,27 +3,88 @@ import Header from "./Components/Header/Header";
 import { Navbar } from "./Components/Navbar/Navbar";
 import About from "./Components/About/About.jsx";
 import { colorTemContext } from "./context/TemColorContext";
-import Skills  from "./Components/Skills/Skills";
+import Skills from "./Components/Skills/Skills";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import Portfolio from "./Components/portfolio/Portfolio";
 import Contact from "./Contact/Contact";
-export const Home = () => {
-  const { colors } = useContext(colorTemContext);
+import Footer from "./Components/Footer/Footer";
+import FloatingNav from "./Components/FloatingNav/FloatingNav";
+import ScrollspyNav from "react-scrollspy-nav";
+
+import { AiFillHome } from "react-icons/ai";
+import { BsPersonFill } from "react-icons/bs";
+import { AiFillAppstore } from "react-icons/ai";
+import { AiFillMessage } from "react-icons/ai";
+import { SiReact } from "react-icons/si";
+
+const scrollTargetIds = ["home", "about", "skills", "portfolio", "contact"];
+// const scrollTargetIds = [ "about", "contact"];
+
+// Component that renders the scroll target elements
+const ScrollTargetComponent = ({ colors }) => {
   return (
-    <div className={`${colors.backColor + "b"}`}>
+    // <div className={`${colors.backColor + "b"}`}>
+    <>
       <Navbar />
       <Header />
-      <div className={`${colors.backColor + "a"}`}>
-        <About />
-      </div>
-      <Skills/>
-      <div className={`${colors.backColor + "a"} pb-5`}>
-    <Portfolio/>  
-      </div>
-    <Testimonials/>
-    <div className={`${colors.backColor + "a"} pt-5 mt-5 pb-5`}>
-    <Contact />  
-      </div>
-    </div>
+      <About />
+      <Skills />
+      <Portfolio />
+      <Testimonials />
+      <Contact />
+      <Footer />
+</>
+    // </div>
+  );
+};
+
+export const Home = () => {
+  const { colors } = useContext(colorTemContext);
+
+  return (
+    <>
+      <ScrollspyNav
+        scrollTargetIds={scrollTargetIds}
+        offset={-100}
+        activeNavClass="is-active"
+        scrollDuration="1000"
+        headerBackground="true"
+        // currentClassName=
+      >
+        {/* Navigation links */}
+      
+      <span className="back-nav">
+      <ul className={`${colors.backColor+"bf"} col-12 d-flex flex-row justify-content-center floating__nav`}>
+          <li>
+            <a href="#home">
+              <AiFillHome />
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              <BsPersonFill />
+            </a>
+          </li>
+          <li>
+            <a href="#skills">
+              <SiReact />
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio">
+              <AiFillAppstore />
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <AiFillMessage />
+            </a>
+          </li>
+        </ul>
+      </span>
+      </ScrollspyNav>
+
+      <ScrollTargetComponent colors={colors} />
+    </>
   );
 };

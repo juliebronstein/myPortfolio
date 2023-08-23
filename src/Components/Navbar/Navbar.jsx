@@ -16,7 +16,7 @@ export const Navbar = () => {
         Marya <span className={`${colors.primaryColor+"c"}`} >Chibour</span>
       </div>
       </a>
-      <ul className="nav__menu d-none d-none d-lg-flex">
+      <ul className="nav__menu d-none  d-lg-flex">
         {Ndata.map((item) => (
           <li key={item.id}>
             <a href={item.link}>{item.title}</a>

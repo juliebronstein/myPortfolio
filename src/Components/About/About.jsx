@@ -11,8 +11,8 @@ const About = () => {
   const {colors} = useContext(colorTemContext);
   return (
     <>
-      <section id="about" data-aos="fade-in">
-        <div className={`container about__container `}>
+      <section className={`${colors.backColor + "a"}`} id="about" data-aos="fade-in">
+        <div className={`container about__container`}>
           <div className={` about__left`}>
             <div className={`${colors.backColor+"b"} about__portrait `}>
               <img className="col-11 d-flex" src={pic} alt="" />

@@ -1,9 +1,19 @@
-#floating__nav {
+/* #floating__nav {
     display: none;
-  }
+  } */
+
+/* .b{
+  color: blue;
+}
+.is-active{
+  color: blue;
   
+}
+#floating__nav div li.active a {
+color: blue;
+} */
   /* Media Query (Tablet and Phone) */
-  @media screen and (max-width: 1024px) {
+  /* @media screen and (max-width: 1024px) {
     #floating__nav {
       display: flex;
       align-items: center;
@@ -13,7 +23,7 @@
       transform: translateX(-50%);
       z-index: 9;
     }
-    .scrollspy {
+    .ScrollspyNav {
       display: flex;
       gap: 1rem;
       background: rgba(0, 0, 0, 0.4);
@@ -31,7 +41,8 @@
     }
   
     #floating__nav li.active a {
-      background: var(--color-primary);
+      background: black;
     }
-  }
+
+  } */
   

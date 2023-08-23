@@ -38,7 +38,7 @@ export const socials = [
   },
   {
     id: 2,
-    link: "https://github.com/geeky-prashant",
+    link: "https://github.com/samanta580",
     icon: <BsGithub />,
   },
   {

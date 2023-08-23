@@ -2,9 +2,11 @@ import "./Portfolio.css";
 import ProjectsCategories from "./ProjectsCategories";
 import Projects from "./Projects";
 import Pdata from "./Pdata";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { colorTemContext } from "../../context/TemColorContext";
 
 const Portfolio = () => {
+  const { colors} = useContext(colorTemContext);
   const [projects, setProjects] = useState(Pdata);
   // const categories = Pdata.map((item) => item.category);
   // const uniqueCategories = ["All", ...new Set(categories)];
@@ -24,8 +26,8 @@ const Portfolio = () => {
   return (
     <>
 
-      <section id="portfolio">
-        <h2 className="pt-5 mt-5">Recent Projects</h2>
+      <section className={`${colors.backColor + "a"} pb-5`} id="portfolio">
+        <h2 className="pt-5">Recent Projects</h2>
         <p className="text-center">
           Check out some of the projects I recently worked on.
         </p>

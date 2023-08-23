@@ -7,7 +7,7 @@ const Pdata = [
     //   title: "Responsive Netflix Clone",
     //   desc: "The project is built using HTML, CSS, and JavaScript.",
     //   demo: "https://responsive-netflix-clone.vercel.app/",
-    //   github: "https://github.com/geeky-prashant/responsive-netflix-clone",
+    //   github: "",
     // },
     // {
     //   id: 2,
@@ -15,9 +15,9 @@ const Pdata = [
     //   image: "/images/multipage-responsive-facebook-clone.png",
     //   title: "Responsive Facebook Clone",
     //   desc: "The project is built using HTML, CSS, and JavaScript.",
-    //   demo: "https://multipage-responsive-facebook-clone.vercel.app/",
+    //   demo: "",
     //   github:
-    //     "https://github.com/geeky-prashant/multipage-responsive-facebook-clone",
+    //     "",
     // },
     // {
     //   id: 3,
@@ -25,8 +25,8 @@ const Pdata = [
     //   image: "/images/responsive-nike-clone.png",
     //   title: "Responsive Nike Clone",
     //   desc: "The project is built using HTML, CSS, and JavaScript.",
-    //   demo: "https://responsive-nike-clone.vercel.app/",
-    //   github: "https://github.com/geeky-prashant/responsive-nike-clone",
+    //   demo: "",
+    //   github: "",
     // },
     {
       id: 4,
@@ -93,8 +93,8 @@ const Pdata = [
     //   image: "/images/react-native-food-delivery-app.png",
     //   title: "React Native Food Delivery App",
     //   desc: "The project is built using Expo, React Native, and React Native Navigation.",
-    //   demo: "https://github.com/geeky-prashant/react-native-food-delivery-app",
-    //   github: "https://github.com/geeky-prashant/react-native-food-delivery-app",
+    //   demo: "",
+    //   github: "",
     // },
     // {
     //   id: 11,
@@ -102,8 +102,8 @@ const Pdata = [
     //   image: "/images/react-native-fitness-app.png",
     //   title: "React Native Fitness App",
     //   desc: "The project is built using Expo, React Native, and React Native Navigation.",
-    //   demo: "https://github.com/geeky-prashant/react-native-fitness-app",
-    //   github: "https://github.com/geeky-prashant/react-native-fitness-app",
+    //   demo: "",
+    //   github: "",
     // },
     // {
     //   id: 12,
@@ -111,8 +111,8 @@ const Pdata = [
     //   image: "/images/react-native-movie-app.png",
     //   title: "React Native Movie App",
     //   desc: "The project is built using Expo, React Native, React Native Navigation, NativeWind, Axios, and TMDB Movie API.",
-    //   demo: "https://github.com/geeky-prashant/react-native-movie-app",
-    //   github: "https://github.com/geeky-prashant/react-native-movie-app",
+    //   demo: ",
+    //   github: "",
     // },
     // {
     //   id: 13,
@@ -120,8 +120,8 @@ const Pdata = [
     //   image: "/images/react-native-weather-app.png",
     //   title: "React Native Weather App",
     //   desc: "The project is built using Expo, React Native Navigation, NativeWind, HeroIcons, and WeatherAPI.",
-    //   demo: "https://github.com/geeky-prashant/react-native-weather-app",
-    //   github: "https://github.com/geeky-prashant/react-native-weather-app",
+    //   demo: "",
+    //   github: "",
     // },
     // {
     //   id: 14,
@@ -129,8 +129,8 @@ const Pdata = [
     //   image: "/images/react-native-linkedIn-clone.png",
     //   title: "React Native LinkedIn Clone",
     //   desc: "The project is built using React Native Expo CLI, React Native Navigation and JavaScript.",
-    //   demo: "https://github.com/geeky-prashant/react-native-linkedin-clone",
-    //   github: "https://github.com/geeky-prashant/react-native-linkedin-clone",
+    //   demo: "",
+    //   github: "",
     // },
   ];
   

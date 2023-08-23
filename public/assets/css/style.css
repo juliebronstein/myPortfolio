@@ -92,7 +92,8 @@ color: rgb(175, 165, 73)  !important;
   background-color:  rgb(255, 255, 255) !important;
 }
 .bg-1b{
-  background-color:  whitesmoke !important;
+  background-color:  whitesmoke;
+  /* background-color: whitesmoke; */
 }
 .bg-2a{
   color: whitesmoke;
@@ -184,3 +185,101 @@ margin-left: 10px;
   .about{
     height: 100vh;
   }
+
+
+  /* =================================================================================== */
+
+/* #floating__nav {
+    display: none;
+  } */
+  .back-nav{
+      /* z-index: 10000;
+     background-color: rgba(61, 60, 60) !important; 
+      opacity: 0.3; */
+      /*
+     filter: blur(80px);  */
+  }
+.bg-1bf{
+  background-color: rgba(61, 60, 60, 0.4) !important;
+}
+.bg-2bf{
+  background-color: rgb(0, 0, 0,0.4) !important;
+}
+.floating__nav{
+  z-index: 10000;
+  backdrop-filter: blur(4px);
+  position: fixed;
+  bottom: 10px;
+ 
+ 
+ 
+
+  
+ 
+}
+.floating__nav li{
+
+}
+.floating__nav a{
+  width: 3.5rem;
+  aspect-ratio: 1/1;
+  color: white;
+  background: var(--color-primary);
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  }
+  .is-active{
+scale:(2rem);
+  }
+
+
+
+
+
+
+
+
+
+
+  
+
+  #floating__nav div li.active a {
+  color: rgb(255, 0, 0) !important;
+  }
+    /* Media Query (Tablet and Phone) */
+    @media screen and (max-width: 1024px) {
+      #floating__nav {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9;
+      }
+      .ScrollspyNav {
+        display: flex;
+        gap: 1rem;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 0.6rem 0.8rem;
+        border-radius: 3rem;
+        backdrop-filter: blur(20px);
+      }
+    
+      #floating__nav a {
+        padding: 0.6rem;
+        border-radius: 50%;
+        font-size: 1.3rem;
+        color: white;
+        display: grid;
+      }
+    
+      #floating__nav li.active {
+        color: red !important;
+      }
+  
+    }
+    

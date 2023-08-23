@@ -9,8 +9,8 @@ const Services = () => {
   const {colors} = useContext(colorTemContext);
   return (
     <>
-      <section id="skills">
-        <h2 className="text-center pt-5 mt-5" >Skills & Proficiencies</h2>
+      <section className={`${colors.backColor+"b"} pt-5`} id="skills">
+        <h2 className="text-center pt-5" >Skills & Proficiencies</h2>
         <p className="text-center">Highlighting my abilities and expertise</p>
         <div className="container services__container col-12 col-md-9" data-aos="fade-up">
           {Sdata.map((item) => (

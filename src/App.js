@@ -2,6 +2,7 @@ import React from "react";
 import { ColorTemContainer } from "./context/TemColorContext";
 
 import { Home } from "./Home";
+import FloatingNav from "./Components/FloatingNav/FloatingNav";
 
 
 
@@ -12,7 +13,6 @@ function App() {
   <ColorTemContainer>
     
 <Home/>
-     
    
  </ColorTemContainer>
   );
