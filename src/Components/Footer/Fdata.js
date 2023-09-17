@@ -33,17 +33,17 @@ export const links = [
 export const socials = [
   {
     id: 1,
-    link: "https://www.linkedin.com",
+    link: "https://www.linkedin.com/in/jule-bronstein/",
     icon: <BsLinkedin />,
   },
   {
     id: 2,
-    link: "https://github.com/samanta580",
+    link: "https://github.com/juliebronstein",
     icon: <BsGithub />,
   },
   {
     id: 3,
-    link:"mailto:marya.chibour@gmail.com",
+    link:"mailto:bronsteinjulie@gmail.com",
     icon: <SiGmail />,
   },
 ];

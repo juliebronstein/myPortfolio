@@ -5,12 +5,12 @@ const Cdata = [
   {
     id: 1,
     icon: <HiOutlineMail />,
-    link: "mailto:marya.chibour@gmail.com",
+    link: "mailto:bronsteinjulie@gmail.com",
   },
   {
     id: 2,
     icon: <BsLinkedin />,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/jule-bronstein/",
   },
 ];
 

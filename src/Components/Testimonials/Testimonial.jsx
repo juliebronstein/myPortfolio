@@ -17,7 +17,7 @@ const Testimonial = ({ avatar, quote, name, profession }) => {
       </p>
       <div className="testimonial__client">
         <div className="testimonial__client-avatar">
-          <img src={avatar} alt="" />
+          <img className="col-12" src={avatar} alt="" />
         </div>
         <div className="testimonial__client-details">
           <h6 className="f-s-b ">{name}</h6>

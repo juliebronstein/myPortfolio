@@ -10,7 +10,7 @@ import { FaSass } from "react-icons/fa";
 import { SiReact } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import georgia from "../../svg/flag.svg";
-import pic from "../../svg/profile.png";
+import pic from "../../svg/profile2.png";
 import verify from "../../svg/verified.png";
 import { colorTemContext } from "../../context/TemColorContext";
 const Header = () => {
@@ -20,9 +20,9 @@ const Header = () => {
   });
 
   return (
-    <header className={` ${colors.backColor + "b"} pb-5`} id="home">
-      <div className={`container header__container`}>
-        <div className="header__profile" data-aos="fade-in">
+    <header className={` ${colors.backColor + "b"} pb-5 `} id="home">
+      <div className={`container header__container pt-5 pt-md-0`}>
+        <div className="header__profile pt-5 pt-md-0" data-aos="fade-in">
           <img
             className="profile-img col-12"
             src={pic}
@@ -44,7 +44,7 @@ const Header = () => {
           <SiReact />
           {/* <TbBrandNextjs /> */}
         </div>
-        <h2 data-aos="fade-up">Marya Chibour</h2>
+        <h2 data-aos="fade-up">Jule Bronstein</h2>
         <p data-aos="fade-up">
           A highly skilled Frontend Developer based in Georgia{" "}
           <span className="georgia">

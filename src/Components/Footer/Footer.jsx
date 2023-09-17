@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__copyright">
-          <small>&copy; 2023-25 Marya Chibour| All Rights Reserved</small>
+          <small>&copy; 2023-25 Jule Bronstein| All Rights Reserved</small>
         </div>
       </footer>
     </>

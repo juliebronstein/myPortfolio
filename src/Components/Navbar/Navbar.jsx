@@ -13,7 +13,7 @@ export const Navbar = () => {
     >
       <a className="text-decoration-none" href="/#">
       <div className={` name`} >
-        Marya <span className={`${colors.primaryColor+"c"}`} >Chibour</span>
+        Jule <span className={`${colors.primaryColor+"c"}`} >Bronstein</span>
       </div>
       </a>
       <ul className="nav__menu d-none  d-lg-flex">

@@ -31,7 +31,7 @@ Get in touch with me through the contact information provided. Let's start a jou
                   method="POST"
                 className="contact-inputs"
               >
-                <label htmlFor="name">What is your beautiful name</label>
+                <label htmlFor="name">What is your name</label>
                 <input className={`${colors.backColor+"b"}`} type="text" name="name" autoComplete="off" required />
                 <label htmlFor="email">Your favorite email address</label>
                 <input className={`${colors.backColor+"b"}`}  type="email" name="email" autoComplete="off" required />

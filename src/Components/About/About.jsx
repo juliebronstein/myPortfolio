@@ -1,7 +1,6 @@
 import "./about.css";
 import { HiDownload } from "react-icons/hi";
 import pic from '../../svg/about-img.png'
-// import Card from "../../components/Card";
 import Adata from "./Adata";
 import { useContext } from "react";
 import { colorTemContext } from "../../context/TemColorContext";
@@ -50,7 +49,7 @@ const About = () => {
             </p>
             <a
             className={` btn btn-primary ${colors.primaryColor}`}
-              href="./MaryaChibour.pdf"
+              href="./JuleB.pdf"
               download
             >
               Download CV <HiDownload />
