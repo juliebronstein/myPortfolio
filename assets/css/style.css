@@ -201,15 +201,7 @@ margin-right: 7px;
 /* #floating__nav {
     display: none;
   } */
-  .back-nav{
-    /* align-items: center; */
-    /* display:flex; */
-      /* z-index: 10000;
-     background-color: rgba(61, 60, 60) !important; 
-      opacity: 0.3; */
-      /*
-     filter: blur(80px);  */
-  }
+
 .bg-1bf{
   background-color: rgba(61, 60, 60, 0.4) !important;
 }
@@ -220,18 +212,18 @@ margin-right: 7px;
   z-index: 100;
   backdrop-filter: blur(4px);
   position: fixed;
-  bottom: 10px;
-  margin-left: 1rem;
- 
- 
-
-  
- 
+  bottom: 0px; 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
+
 .floating__nav li{
 text-decoration: none !important;
 list-style-type: none;
+display:flex;
 }
+
 .floating__nav a{
   width: 3.5rem;
   aspect-ratio: 1/1;
@@ -263,42 +255,3 @@ border: 1px solid black;
 
 
 
-  
-
-  #floating__nav div li.active a {
-  color: rgb(255, 0, 0) !important;
-  }
-    /* Media Query (Tablet and Phone) */
-    @media screen and (max-width: 1024px) {
-      #floating__nav {
-        display: flex;
-        align-items: center;
-        position: fixed;
-        bottom: 1.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 9;
-      }
-      .ScrollspyNav {
-        display: flex;
-        gap: 1rem;
-        background: rgba(0, 0, 0, 0.4);
-        padding: 0.6rem 0.8rem;
-        border-radius: 3rem;
-        backdrop-filter: blur(20px);
-      }
-    
-      #floating__nav a {
-        padding: 0.6rem;
-        border-radius: 50%;
-        font-size: 1.3rem;
-        color: white;
-        display: grid;
-      }
-    
-      #floating__nav li.active {
-        color: red !important;
-      }
-  
-    }
-    
