@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/myPortfolio/static/css/main.4d882487.css",
+    "main.js": "/myPortfolio/static/js/main.b8a50626.js",
+    "static/js/787.1f11dfe9.chunk.js": "/myPortfolio/static/js/787.1f11dfe9.chunk.js",
+    "static/media/weather-pic.png": "/myPortfolio/static/media/weather-pic.6d1047fa9ef655c50586.png",
+    "static/media/profile2.png": "/myPortfolio/static/media/profile2.237632833b5662303add.png",
+    "static/media/about-img.png": "/myPortfolio/static/media/about-img.21d9210246e7e25f1797.png",
+    "static/media/ChatApp.JPG": "/myPortfolio/static/media/ChatApp.2776b49c11704aca1468.JPG",
+    "static/media/verified.png": "/myPortfolio/static/media/verified.b97487c0f01c3f4098b8.png",
+    "static/media/todolist.png": "/myPortfolio/static/media/todolist.a763aa93d7d73b65e694.png",
+    "static/media/flag.svg": "/myPortfolio/static/media/flag.f5b9268014f91cc65c493b3ba3180294.svg",
+    "index.html": "/myPortfolio/index.html",
+    "main.4d882487.css.map": "/myPortfolio/static/css/main.4d882487.css.map",
+    "main.b8a50626.js.map": "/myPortfolio/static/js/main.b8a50626.js.map",
+    "787.1f11dfe9.chunk.js.map": "/myPortfolio/static/js/787.1f11dfe9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d882487.css",
+    "static/js/main.b8a50626.js"
+  ]
+}
