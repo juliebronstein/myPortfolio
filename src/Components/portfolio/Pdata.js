@@ -1,6 +1,6 @@
 import weather from'./img/weather-pic.png'
 import ChatApp from './img/ChatApp.JPG'
-import toDoList from './img/todolist.png'
+import toDoList from './img/Task.png'
 const Pdata = [
     
   {
@@ -29,9 +29,9 @@ const Pdata = [
       image: toDoList,
       title: "React Responsive Task Manager",
       desc: "The project is built using HTML, CSS, JavaScript, React 18, React Router, and firebase.",
-      demo: "https://juliebronstein.github.io/TodoList",
+      demo: "https://juliebronstein.github.io/TaskManager",
       github:
-        "https://github.com/juliebronstein/TodoList",
+        "https://github.com/juliebronstein/TaskManager",
     },
   ];
   
